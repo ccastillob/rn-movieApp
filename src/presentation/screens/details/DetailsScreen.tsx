@@ -20,7 +20,9 @@ export const DetailsScreen = ({route}: Props) => {
   }
 
   return (
-    <ScrollView>
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+    >
       {/* Header */}
       <MovieHeader originalTitle={movie!.originalTitle} title={movie!.title} poster={movie!.poster} />
       {/* Details */}
